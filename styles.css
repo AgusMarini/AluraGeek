@@ -1,0 +1,331 @@
+:root{
+  --color-blue: rgb(42, 123 ,229);
+  --color-grey: #666;
+  --color-white: white;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+border: none;
+outline: none;
+scroll-behavior: smooth;
+font-family: raleway;
+}
+header{
+  width: 100%;
+  height: 7rem ;
+}
+
+.AluraGeek{
+  display: flex;
+  align-items: center; 
+  margin-left: 10rem; 
+  padding: 1rem;
+  background-color:var(--color-white);
+
+  
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: center; 
+  margin: 1rem;
+  left: 1rem;
+  }
+  
+  
+  .container img {
+    position: absolute;
+    right: 10px;
+    color: var(--color-grey); 
+  }
+  
+
+  .search__input {
+     
+     padding: 0.5rem 4.5rem 0.5rem 2rem;
+    border: 1px solid #ccc; 
+    border-radius: 1rem; 
+    outline: none; 
+    font-size: 17px;
+    width: 400px;
+    text-align: left;
+    background-color: lightgrey;
+    font-family: sans-serif;
+   }
+  .button-loggin{
+    padding: 1rem 5rem;
+    margin-left: 26rem;
+    border: 2px solid var(--color-blue);
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    font-family: sans-serif;
+  }
+  /* banner */
+  .banner{
+    background: url(/imagenes/banner-image.png) lightgray 50% / cover no-repeat;
+    background-position: center;
+    height: 400px; 
+  }
+  .banner-titulo{
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 3.5em;
+    position: relative;
+    top: 12rem;
+    left: 7rem;
+    }
+    .banner-descripcion{
+      color: white;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1.5em;
+      position: relative;
+      top: 13rem;
+      left: 7rem;
+    }
+  .banner-button{
+    padding: 1rem;
+    background: var(--color-blue);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+    position: relative;
+    top: 16rem;
+    left: 7rem;
+    color: white;
+  }
+  .banner-button:hover{
+    background-color: #ccc;
+  }
+  /* Productos */
+  .productos{
+    padding: 1rem;
+  }
+  .product-line{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8rem;
+    padding: 2rem;
+    padding-right: 13rem;
+    gap: 1rem;
+    
+  }
+  /* .productos__articulo-nombre{
+    font-weight: bold;
+    color: #464646;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    
+  } */
+  .product-link{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+ 
+ 
+  .product-link-p{
+    color: #2A7AE4;
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  }
+
+
+ .productos__articulo-nombre{
+  font-family: sans-serif;
+  color: #464646;
+  padding-bottom: 0.5rem;
+
+} 
+ .productos__articulo-precio{
+  color: #464646;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  
+} 
+.productos__articulo-ver{
+  color: #2A7AE4;
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.productos__articulos-container{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-left: 10rem;
+  
+}
+/* section form */
+.blue-section{
+  background-color: rgb(232 240 253);
+  
+}
+.blue-container{
+  display: flex;
+  
+}
+.blue-content{
+  display: flex;
+}
+.logo-alura{
+  
+  padding: 6rem;
+  margin: 2rem;
+}
+.blue-link{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  margin-left: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+/* contacto */
+.contacto{
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  margin-left: 9rem;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.contacto-titulo{
+  margin-right:1rem ;
+  color: rgb(53, 52, 52);
+}
+.input-container{
+  position: relative;
+  width: 100%;
+}
+.input-container__input{
+  resize: none;
+  border-radius: 4px;
+  background-color: var(--color-white);
+  padding: 30px 12px 8px;
+  border-bottom: 1px solid rgb(215, 212, 212);
+  width: 300%;
+  height: 100%;
+  color: var(--color-grey);
+}
+.input-container__label{
+  position: absolute;
+  inset: 0;
+  padding: 16px 0 0 12px;
+  margin: 0;
+  color: var(--color-grey);
+  transition: all .1s ease;
+  height: min-content;
+  z-index: 1;
+}
+.contacto-button{
+  position: relative;
+  display: inline-block;
+  border: 0;
+  padding: 20px 25px;
+  color: var(--color-white);
+  font-size: 1rem;
+  background-color: var(--color-blue);
+  font-family:'Raleway', sans-serif ;
+  text-decoration: none;
+  transition: all .2s ease;
+  z-index: 0;
+  text-align: center;
+  margin-right: 1.5rem;
+}
+.contacto-button:hover{
+  background-color: #ccc;
+}
+/* footer */
+.footer{
+  background-color:rgb(246, 243, 243);
+  width: 100%;
+
+}
+.copy-right{
+  text-align: center;
+}
+/* media query */
+@media (max-width:500px) {
+   header{
+  padding: 1rem;
+    margin: 1rem;
+    margin-left: -1rem;
+    margin-top: -0.5rem;
+  } 
+ 
+    .AluraGeek{
+    margin: 0 auto;
+  }
+  .logo{
+    width: 30%;
+  }
+  .search__input{
+    position: absolute;
+		top: 11rem;
+		left: 0.7rem;
+		width: 96%;
+		border-bottom-style: groove;
+  }
+  .hide{
+   display: none;
+}
+.header__logo-busqueda {
+ margin-right: -16rem;
+}
+.button-loggin{
+ 
+  margin-left: 0.5rem;
+  width: 60%;
+  position: relative;
+  right: 1rem;
+
+}
+.banner{
+ height: 190px;
+ margin-top: -2rem;
+  
+}
+.banner-titulo{
+  color: var(--color-white);
+  position: relative;
+  top: 3em;
+  left: 0;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.banner-descripcion{
+  color: var(--color-white);
+  position: relative;
+  top: 4rem;
+  left: 0;
+  font-size: 1rem;
+  width: 400px;
+  margin: 1rem;
+}
+.banner-button{
+  position: relative;
+  top: 4rem;
+  left: 1rem;
+  font-size: 15px;
+  padding: 0.6rem;
+}
+.product-line{
+  margin-left: -1.5rem;
+  padding: 1rem;
+}
+.productos__articulos-container{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+}
